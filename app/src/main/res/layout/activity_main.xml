@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.fransson.leonard.oskar.testconcurrentdb.MainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Concurrent"
+            android:id="@+id/button"
+            android:layout_marginTop="59dp"
+            android:layout_below="@+id/textView"
+            android:layout_alignRight="@+id/btnListSize"
+            android:layout_alignEnd="@+id/btnListSize" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&quot;Normal&quot;"
+            android:id="@+id/button2"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/button"
+            android:layout_alignStart="@+id/button" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ListSize"
+            android:id="@+id/btnListSize"
+
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ResetDb"
+            android:id="@+id/btnReset"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/btnListSize"
+            android:layout_alignEnd="@+id/btnListSize"
+            android:layout_marginBottom="63dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
